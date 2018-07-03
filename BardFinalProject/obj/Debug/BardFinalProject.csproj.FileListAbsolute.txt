@@ -1,0 +1,5 @@
+C:\Users\Ethan\Documents\Moraine\MIS285\Assignments\BardFinalProject\BardFinalProject\bin\BardFinalProject.dll
+C:\Users\Ethan\Documents\Moraine\MIS285\Assignments\BardFinalProject\BardFinalProject\bin\BardFinalProject.pdb
+C:\Users\Ethan\Documents\Moraine\MIS285\Assignments\BardFinalProject\BardFinalProject\obj\Debug\BardFinalProject.dll
+C:\Users\Ethan\Documents\Moraine\MIS285\Assignments\BardFinalProject\BardFinalProject\obj\Debug\BardFinalProject.pdb
+C:\Users\Ethan\Documents\Moraine\MIS285\Assignments\BardFinalProject\BardFinalProject\obj\Debug\BardFinalProject.csprojResolveAssemblyReference.cache

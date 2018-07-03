@@ -1,0 +1,46 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Scifi.master.cs" Inherits="BardFinalProject.Scifi" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Ethan's Sci-Fi Collectibles</title>
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="Styles/ScifiStyleSheet.css" rel="Stylesheet" type="text/css" />
+</head>
+<body>
+    <form id="form1" runat="server">
+    <h1>Ethan's Sci-Fi Collectibles</h1>
+    <asp:Menu ID="Menu1" runat="server" 
+        DataSourceID="SiteMapDataSource1" StaticSubMenuIndent="10px" 
+        BackColor="#FFFBD6" DynamicHorizontalOffset="2" Font-Names="Verdana" 
+        Font-Size="1.0em" ForeColor="#990000">
+        <DynamicHoverStyle BackColor="#990000" ForeColor="White" />
+        <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+        <DynamicMenuStyle BackColor="#FFFBD6" />
+        <DynamicSelectedStyle BackColor="#FFCC66" />
+        <StaticHoverStyle BackColor="#990000" ForeColor="White" />
+        <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+        <StaticSelectedStyle BackColor="#FFCC66" />
+    </asp:Menu>
+    Username:
+    <asp:TextBox ID="txtUserName" runat="server" Width="95px"></asp:TextBox>
+    &nbsp;Password:
+    <asp:TextBox ID="txtPassword" runat="server" TextMode="Password" Width="95px"></asp:TextBox>
+    <asp:Button ID="btnLogIn" runat="server" onclick="btnLogIn_Click" 
+        Text="Log In" />
+    <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
+    <asp:Label ID="lblError" runat="server" ForeColor="Red"></asp:Label>
+    <asp:AccessDataSource ID="AccessDataSource1" runat="server" DataFile="~/ScifiCollectiblesDB.accdb" 
+        SelectCommand="SELECT * FROM [Customers]">
+    </asp:AccessDataSource>
+    <br />
+    <div>
+        <asp:ContentPlaceHolder ID="MainContent" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>
